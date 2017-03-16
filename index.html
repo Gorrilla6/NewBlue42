@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html >
+ <head>
+   <meta charset="UTF-8">
+   <title>New Blue 42</title>
+   <link rel="stylesheet" href="css/home.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Poiret+One">
+   <link rel="stylesheet" href="css/main.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script>
+   <script src="scripts/index.js" defer></script>
+
+ </head>
+
+<!--Beginning of document-->
+<body>
+
+<!--Beginning of page 1-->
+
+<section class="page-header" id="page1">
+
+    <h1 class="newBlueTitle"> New Blue 42 </h1>
+    <h2 class="discoverAnchor"> DISCOVER MORE BELOW </h2>
+    <a id="downArrow" href="#page3" ></a>
+
+    <section id="mySidenav" class="sidenav">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Explore</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+
+    </section>
+
+    <section onclick="openNav()" class="openNavMenu"></section>
+
+</section>
+<!--End of page 1-->
+
+
+
+
+
+<!--Beginning of page 2-->
+<section id="page2">
+
+<!--Top image line-->
+   <section class="imageLineTop">
+
+       <img src="assets/imgs/1.jpg" class="discoverImage" id="img0"></img>
+       <img src="assets/imgs/2.jpg" class="discoverImage" id="img1"></img>
+
+       <section id="fadeBox0">
+           <h3 class="imageInlineTitle">Purity.</h3>
+       </section>
+
+       <section id="fadeBox1">
+           <h3 class="imageInlineTitle">Style.</h3>
+       </section>
+
+   </section>
+
+<!--Bottom image line-->
+   <section class="imageLineBottom">
+
+       <img src="assets/imgs/3.jpg" class="discoverImage" id="img2"></img>
+       <img src="assets/imgs/4.jpg" class="discoverImage" id="img3"></img>
+
+       <section id="fadeBox2">
+           <h3 class="imageInlineTitle">Integrity.</h3>
+       </section>
+
+       <section id="fadeBox3">
+           <h3 class="imageInlineTitle">Courage.</h3>
+       </section>
+
+   </section>
+
+ <!--Button to display the Pop-Up-->
+    <a href='#' onclick="show('popup')">Be the first to hear...</a>
+
+<!--Pop-Up box - Contains the form-->
+    <section class="popup" id="popup">
+
+        <h1>Join our mailing list!</h1>
+
+        <!-- Form presented to the user-->
+        <form method="post" name="myemailform" action="scripts/mail.php">
+            <p>
+                <label for='name'>Enter Name: </label><br>
+                <input type="text" name="name">
+            </p>
+            <p>
+                <label for='email'>Enter Email Address:</label><br>
+                <input type="text" name="email">
+            </p>
+            <p>
+                <label for='message'>Enter Message:</label> <br>
+                <textarea name="message" id="messageEntry"></textarea>
+            </p>
+            <input type="submit" name='submit' value="Submit" class="submitButton">
+        </form>
+
+    </section>
+
+</section>
+<!--End of page 2-->
+
+
+
+
+
+
+<!--Page 3-->
+    <section id="page3">
+
+        <a id="testing"></a>
+        <!--Page content goes here-->
+
+    </section>
+
+<!--Beginning of footer-->
+    <section class="footer">
+        <section class="leftColumn">
+            <a href="#">Test</a>
+            <a href="#">Test</a>
+            <a href="#">Test</a>
+            <a href="#">Test</a>
+            <a href="#">Test</a>
+        </section>
+        <section class="rightColumn">
+            <h1>Useful Information</h1>
+            <a href="#">Test2</a>
+            <a href="#">Test2</a>
+            <a href="#">Test2</a>
+            <a href="#">Test2</a>
+            <a href="#">Test2</a>
+        </section>
+    </section>
+
+
+
+
+
+
+
+
+
+
+</body>
+<!--End of document-->
+</html>
