@@ -3,45 +3,41 @@
 <html>
 <head>
 	<title>New Blue 42</title>
-</head>
-
-<body>
-	<meta charset="UTF-8">
+  <meta charset="UTF-8">
 	<link href="css/home.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Poiret+One" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
-	<script src="scripts/index.js"></script>
-  <script src="scripts/smoothScroll.js"></script>
+	<script src="scripts/index.js" defer></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<!--Beginning of document-->
+</head>
+
+<!--Beginning of document-->
+<body>
+
 	 <!--Beginning of page 1-->
-
-
 	<section class="page-header" id="page1">
 		<h1 class="newBlueTitle">New Blue 42</h1>
-
 
 		<h2 class="discoverAnchor">DISCOVER MORE BELOW</h2>
 		<a href="#page2" id="downArrow"></a>
 
-
 		<section class="sidenav" id="mySidenav">
-			<a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a> <a href="#">About</a> <a href=
-			"#">Explore</a> <a href="#">Clients</a> <a href="#">Contact</a>
+			<a class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#">About</a>
+			<a href="#">Explore</a>
+			<a href="#">Clients</a>
+			<a href="#">Contact</a>
 		</section>
 
-
-		<section class="openNavMenu" onclick="openNav()">
-		</section>
+		<a href="#" class="openNavMenu" onclick="openNav()"></a>
 	</section>
 	<!--End of page 1-->
+
+
 	<!--Beginning of page 2-->
-
-
 	<section id="page2">
+
 		<!--Top image line-->
-
-
 		<section class="imageLineTop">
 			<img class="discoverImage" id="img0" src="assets/imgs/1.jpg"> <img class="discoverImage" id="img1" src=
 			"assets/imgs/2.jpg">
@@ -50,14 +46,12 @@
 				<h3 class="imageInlineTitle">Purity.</h3>
 			</section>
 
-
 			<section id="fadeBox1">
 				<h3 class="imageInlineTitle">Style.</h3>
 			</section>
 		</section>
+
 		<!--Bottom image line-->
-
-
 		<section class="imageLineBottom">
 			<img class="discoverImage" id="img2" src="assets/imgs/3.jpg"> <img class="discoverImage" id="img3" src=
 			"assets/imgs/4.jpg">
@@ -72,7 +66,7 @@
 			</section>
 		</section>
 		<!--Button to display the Pop-Up-->
-		<a href='#' onclick="show('popup')">Be the first to hear...</a> <!--Pop-Up box - Contains the form-->
+		<a href='#' id="mailInvoker">Be the first to hear...</a> <!--Pop-Up box - Contains the form-->
 
 
 		<section class="popup" id="popup">
