@@ -1,78 +1,87 @@
 /*CSS Reset*/
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
 }
 
-.openNavMenu{
-background-image: url("burger_menu.png");
-width:25px;
-height:25px;
-left:25px;
-top: 10px;
-position: fixed;
-cursor: pointer;
-z-index: 1;
+.openNavMenu {
+	background-image: url("burger_menu.png");
+	width: 25px;
+	height: 25px;
+	left: 25px;
+	top: 10px;
+	position: fixed;
+	cursor: pointer;
+	z-index: 1;
 }
 
 .sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 2;
-  top:0;
-  left:0;
-  background-color: hsl(220, 74%, 62%);
-  overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0.5s; /* Time for transition effect to slide in the sidenav (seconds)*/
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	background-color: hsl(220, 74%, 62%);
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+	/* Time for transition effect to slide in the sidenav (seconds)*/
 }
 
-.sidenav a{
-  padding: 10px 1px 1px 30px;
-  text-decoration: none;
-  font-size: 50px;
-  font-family: Poiret One;
-  color: white;
-  display: block; /*Change to an off-white/grey colour*/
-  transition: 0.3s;
+.sidenav a {
+	padding: 10px 1px 1px 30px;
+	text-decoration: none;
+	font-size: 50px;
+	font-family: Poiret One;
+	color: white;
+	display: block;
+	/*Change to an off-white/grey colour*/
+	transition: 0.3s;
 }
 
 /*When you mouse over the navigation links, change their color*/
-.sidenav a:hover, .offcanvas a:focus{
-  color: #f1f1f1;
+
+.sidenav a:hover, .offcanvas a:focus {
+	color: #f1f1f1;
 }
 
-.sidenav .closebtn{
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
 }
 
-@media screen and (max-height: 450px){
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
 }
 
-.footer{
-  width: 100%;
-}
-.rightColumn{
-  width:200px;
-  right: 5px;
-  position: absolute;
+.footer {
+	width: 100%;
 }
 
-.leftColumn{
-  width: 200px;
-  position: absolute;
-  left: 5px;
-  height: 40px;
+.rightColumn {
+	width: 200px;
+	right: 5px;
+	position: absolute;
+}
+
+.leftColumn {
+	width: 200px;
+	position: absolute;
+	left: 5px;
+	height: 40px;
 }
