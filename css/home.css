@@ -76,7 +76,7 @@
 }
 
 #downArrow {
-	background-image: url("down-arrow(1).png");
+	background-image: url("../assets/imgs/down-arrow.png");
 	width: 52px;
 	height: 52px;
 	left: 50%;
@@ -89,7 +89,7 @@
 
 .page-header {
 	/*The image used*/
-	background-image: url("kid_cudi.jpg");
+	background-image: url("../assets/imgs/kid_cudi.jpg");
 	height: 900px;
 	/*Create the parralax scrolling effect*/
 	background-attachment: fixed;
