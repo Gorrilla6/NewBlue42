@@ -10,24 +10,93 @@ height: 100%;
 }
 
 #contentBody{
-  background-color: white;
+  background-color: #FFFFFF;
   position: absolute;
   z-index: 10;
   width: 1200px;
   height: 700px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -40%);
+  transform: translate(-50%, -60%);
 }
 
+.imageDescriptor{
+position:absolute;
+font-family: Poiret One;
+font-size: 20px;
+}
+
+.productInfo{
+	width: 100%;
+}
+
+.descriptorLeft{
+left: 3%;
+}
+
+.descriptorRight{
+right: 0%;
+
+}
+.descriptorCenter{
+left: 45%;
+}
+
+.descriptorTop{
+top: 10%;
+}
+
+.descriptorMid{
+top: 25%
+}
+
+.descriptorBottom{
+	top: 40%;
+
+
+}
+
+.descriptorCenter{
+left: 45%;
+}
 #productInfoHead{
 	width:300px;
 	height:200px;
-	background-color: black;
+	background-color: #EFEFE8;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -210%);
+	transform: translate(-50%, 100%);
+}
+
+#productInfoHeadImg{
+	top: 50px;
+	left: 50%;
+	transform: translate(-50%, -90%);
+	opacity: 1;
+	width: 300px;
+	position: absolute;
+}
+
+.productTitle{
+top: 50px;
+left: 50%;
+transform: translate(-50%, 50%);
+position: absolute;
+font-family: Montez;
+font-size: 40px;
+}
+
+.tagline{
+	top: 50px;
+	left: 50%;
+	transform: translate(-50%, 140%);
+	position: absolute;
+	font-family: Indie Flower;
+	font-size: 20px;
+	width: inherit;
+	text-align: center;
+	font-weight: lighter;
 }
 
 /*Overflow:hidden used to hide the rest of the video that extends beyond the page due to improper aspect ratio*/
