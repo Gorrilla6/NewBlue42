@@ -4,44 +4,73 @@
 <head>
 	<title>RichBoi | NewBlue42</title>
   <meta charset="UTF-8">
-	<link href="../css/home.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Poiret+One" rel="stylesheet">
 	<link href="../css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/product_Page.css">
 	<script src="../scripts/index.js" defer></script>
-	<script src="../scripts/videoControls.js" defer></script>
+	<script src="../scripts/videoControls.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 
 <!--Beginning of document-->
 <body>
 
-	 <!--Beginning of section-->
-	<section class="page-header" id="page1">
-		<div id="video-container">
+
+<!--Main page content container-->
+<section id="pageContent">
+		<section id="video-container">
 				<!-- Video -->
-				<video id="video" width="640" height="365">
-					<source src="../assets/vid/mikethefrog.webm" type="video/webm">
-					<source src="../assets/vid/mikethefrog.ogv" type="video/ogv">
-					<source src="../assets/vid/mikethefrog.mp4" type="video/mp4">
+				<video id="inkVideo" autoplay loop>
+					<source src="../assets/vid/Pink_Ink.mp4" type="video/mp4">
 				  <p>
 				    Your browser doesn't support HTML5 video.
-				    <a href="videos/mikethefrog.mp4">Download</a> the video instead.
+				    <a href="videos/Pink_Ink.mp4">Download</a> the video instead.
 				  </p>
 				</video>
 				<!-- Video Controls -->
-				<div id="video-controls">
-					<button type="button" id="play-pause" class="play">Play</button>
-					<input type="range" id="seek-bar" value="0">
-					<button type="button" id="mute">Mute</button>
-					<input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
-					<button type="button" id="full-screen">Full-Screen</button>
-				</div>
-			</div>
+				<section id="video-controls">
+					<!--<button type="button" id="play_pause" class="play"></button>-->
+					<input type="image" src="../assets/imgs/pause.png" name="play_pause" id="play_pause" class="play">
+
+
+				</section>
+			</section>
+
+
+<!--This is the product content. Will contain the article tag-->
+<section id="contentBody">
+	<section id="productInfoHead">
+   <img src="" id="productInfoHeadImg">
+	 <h1>RichBoi</h1>
+	</section>
+
+	<article class="productInfo">
+
+	</article>
+
+
+</section>
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Side navigation menu content and layout-->
 		<section class="sidenav" id="mySidenav">
+			<!--Close side navigation menu once it has been opened-->
 			<a class="closebtn" onclick="closeNav()">&times;</a>
 			<a href="about.html">About</a>
 			<a href="explore.html">Explore</a>
@@ -49,36 +78,10 @@
 			<a href="#">Contact</a>
 		</section>
 
+<!--Open side navigation-->
 		<a href="#" class="openNavMenu" onclick="openNav()"></a>
-	</section>
-
-
-
-
-
-
-
-	<!--Beginning of footer-->
-	<section class="footer">
-		<section class="leftColumn">
-			<h1>Useful Information</h1>
-			<a href="#">Test</a>
-			<a href="#">Test</a>
-			<a href="#">Test</a>
-			<a href="#">Test</a>
-			<a href="#">Test</a>
-		</section>
-
-
-		<section class="rightColumn">
-			<h1>Useful Information</h1>
-			<a href="#">Test2</a>
-			<a href="#">Test2</a>
-			<a href="#">Test2</a>
-			<a href="#">Test2</a>
-			<a href="#">Test2</a>
-		</section>
-	</section>
+<!-- End of page Container -->
+</section>
 	<!--End of document-->
 </body>
 </html>
